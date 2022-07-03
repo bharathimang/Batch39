@@ -18,11 +18,10 @@ public class DashBoardPage extends BasePage {
 		Thread.sleep(5000);
 		myInfoTab.click();
 	}
+
 	
-	public void validateMyInfoTab() {
-		if(myInfoTab.isDisplayed()) {
-			System.out.println("My info tab is displayed");
-		}
+	public void validateTitle() {
+		System.out.println(driver.getTitle());
 	}
 
 }
